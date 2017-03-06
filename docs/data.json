@@ -1,0 +1,109 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": null,
+    "project_url": null,
+    "copyright_start_year": null,
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": null,
+            "url": null
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F4F8FA",
+        "brand_color": "#5AFF99",
+        "background_color": "#F9FBFC",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#394149",
+        "sample_dark_background": "#394149",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": ["app/css/pageturner.css"],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+        ]
+    },
+    "groups": [
+        {
+            "name": "branding",
+            "title": "Branding",
+            "components": [
+                {
+                    "group": "branding",
+                    "name": "color-palette",
+                    "title": "Colour Scheme",
+                    "type": "colors",
+                    "colors": [
+                        "#394149,#70767C",
+                        "#2D7F4C,#5AFF99",
+                        "#F4F8FA,#F9FBFC"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "typography",
+            "title": "Typography",
+            "components": [
+                {
+                    "group": "typography",
+                    "name": "regular",
+                    "title": "Regular",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "light",
+                    "title": "Light",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "italic",
+                    "title": "Italic",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "bold",
+                    "title": "Bold",
+                    "width": "half"
+                },
+                {
+                    "group": "typography",
+                    "name": "paragraphs",
+                    "title": "Paragpraphs",
+                    "width": "full"
+                },
+                {
+                    "group": "typography",
+                    "name": "headings",
+                    "title": "Headings",
+                    "width": "full"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.3"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "styleguide",
+  "version": "1.0.0",
+  "description": "The Pageturner pattern library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pageturner-io/styleguide.git"
+  },
+  "author": "Bruno Abrantes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pageturner-io/styleguide/issues"
+  },
+  "homepage": "https://github.com/pageturner-io/styleguide#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "fs-extra": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0"
+  }
+}
