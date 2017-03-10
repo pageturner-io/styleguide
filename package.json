@@ -2,11 +2,13 @@
   "name": "styleguide",
   "version": "1.0.0",
   "description": "The Pageturner pattern library",
-  "main": "index.js",
+  "main": "assets/exports/pageturner.scss",
+  "style": "assets/exports/",
+  "sass": "assets/exports/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build && node scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0"
+  },
+  "dependencies": {
+    "reflex-grid": "^1.5.0"
   }
 }
