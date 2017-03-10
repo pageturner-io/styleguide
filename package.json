@@ -1,5 +1,5 @@
 {
-  "name": "styleguide",
+  "name": "pageturner-styleguide",
   "version": "1.0.0",
   "description": "The Pageturner pattern library",
   "main": "assets/exports/pageturner.scss",
