@@ -22,6 +22,10 @@
   font-weight: 300;
 }
 
+body {
+  @extend %font-regular;
+}
+
 em {
   @extend %font-regular;
   @extend %font-italic;
@@ -77,3 +81,25 @@ h6 {
   margin: 0.5em 0;
 }
 
+a:link {
+  color: $brand-green;
+  text-decoration: none;
+  padding: 0.1em;
+}
+
+a:visited {
+  color: $dark-green;
+}
+
+a:hover {
+  background: $brand-green;
+  color: $white;
+
+  &:visited {
+    background: $dark-green;
+  }
+}
+
+a:focus {}
+
+a:active {}

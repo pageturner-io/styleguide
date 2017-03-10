@@ -222,7 +222,7 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-em, p,
+body, em, p,
 .font-regular {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400; }
@@ -278,3 +278,17 @@ h6 {
   font-size: 1em;
   line-height: 1em;
   margin: 0.5em 0; }
+
+a:link {
+  color: #5AFF99;
+  text-decoration: none;
+  padding: 0.1em; }
+
+a:visited {
+  color: #2D7F4C; }
+
+a:hover {
+  background: #5AFF99;
+  color: #FFFFFF; }
+  a:hover:visited {
+    background: #2D7F4C; }

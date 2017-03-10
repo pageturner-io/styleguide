@@ -30,7 +30,9 @@
         }
     },
     "assets": {
-        "css": ["app/css/pageturner.css"],
+        "css": [
+            "app/css/pageturner.css"
+        ],
         "js": []
     },
     "font_libraries": {
@@ -41,8 +43,7 @@
     "content": {
         "show_first_page_on_load": true,
         "title": "Overview",
-        "pages": [
-        ]
+        "pages": []
     },
     "groups": [
         {
@@ -101,6 +102,12 @@
                     "name": "headings",
                     "title": "Headings",
                     "width": "full"
+                },
+                {
+                    "group": "typography",
+                    "name": "links",
+                    "title": "Links",
+                    "width": "half"
                 }
             ]
         }
