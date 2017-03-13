@@ -1,0 +1,45 @@
+.nav {
+  @at-root #{&}--main {
+    background: $brand-green;
+  }
+
+  @at-root #{&}__item {
+    list-style-type: none;
+    margin: 0 10px;
+
+    &:first-of-type {
+      margin-right: auto;
+    }
+
+    @at-root #{&}__link {
+      @extend %font-light;
+      font-size: 1.2em;
+
+      color: $ice-gray;
+
+      &:link, &:hover, &:active, &:focus, &:visited {
+        color: $ice-gray;
+        background: transparent;
+      }
+
+      @at-root #{&}--active, &:hover {
+        border-bottom: 4px solid $ice-gray;
+      }
+
+      @at-root #{&}--logo {
+        @extend %font-light;
+        font-size: 2em;
+        line-height: 1em;
+
+        text-transform: lowercase;
+
+        &:link, &:hover, &:active, &:focus, &:visited {
+          color: $dark-green;
+          border: none;
+        }
+
+        width: 15%;
+      }
+    }
+  }
+}
