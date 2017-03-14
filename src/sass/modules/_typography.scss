@@ -82,21 +82,21 @@ h6 {
 }
 
 a:link {
-  color: $brand-green;
+  color: $brand-primary;
   text-decoration: none;
   padding: 0.1em;
 }
 
 a:visited {
-  color: $dark-green;
+  color: $brand-dark;
 }
 
 a:hover {
-  background: $brand-green;
+  background: $brand-primary;
   color: $white;
 
   &:visited {
-    background: $dark-green;
+    background: $brand-dark;
   }
 }
 

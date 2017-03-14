@@ -1,6 +1,10 @@
 .nav {
   @at-root #{&}--main {
-    background: $brand-green;
+    background: $brand-primary;
+
+    border-bottom: 4px solid lighten($brand-primary, 20);
+
+    height: 70px;
   }
 
   @at-root #{&}__item {
@@ -12,8 +16,8 @@
     }
 
     @at-root #{&}__link {
-      @extend %font-light;
-      font-size: 1.2em;
+      @extend %font-regular;
+      font-size: 1em;
 
       color: $ice-gray;
 
@@ -23,7 +27,7 @@
       }
 
       @at-root #{&}--active, &:hover {
-        border-bottom: 4px solid $ice-gray;
+        text-decoration: underline;
       }
 
       @at-root #{&}--logo {
@@ -34,11 +38,17 @@
         text-transform: lowercase;
 
         &:link, &:hover, &:active, &:focus, &:visited {
-          color: $dark-green;
           border: none;
+          text-decoration: none;
         }
 
         width: 15%;
+      }
+    }
+
+    @at-root #{&}__btn {
+      @at-root #{&}--primary {
+        @extend %btn--primary;
       }
     }
   }
