@@ -1,6 +1,6 @@
 .nav {
   @at-root #{&}--main {
-    background: $brand-primary;
+    background: $ice-gray;
 
     border-bottom: 4px solid lighten($brand-primary, 20);
 
@@ -16,13 +16,13 @@
     }
 
     @at-root #{&}__link {
-      @extend %font-regular;
+      @extend %font-bold;
       font-size: 1em;
 
-      color: $ice-gray;
+      color: $brand-primary;
 
       &:link, &:hover, &:active, &:focus, &:visited {
-        color: $ice-gray;
+        color: $brand-primary;
         background: transparent;
       }
 

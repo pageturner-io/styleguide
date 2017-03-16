@@ -222,6 +222,9 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+html, body {
+  background: #F4F8FA; }
+
 /*! Reflex v1.5.0 - https://github.com/leejordan/reflex */
 /*
  *
@@ -1190,7 +1193,15 @@ textarea {
   .hidden-lg {
     display: none !important; } }
 
-body, em, p, .nav__item__link,
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+body, em, p,
 .font-regular {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400; }
@@ -1202,7 +1213,7 @@ em,
 
 strong, .nav__item__btn--primary,
 .btn--primary,
-.btn,
+.btn, .nav__item__link,
 .font-bold {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700; }
@@ -1255,13 +1266,13 @@ a:link {
   padding: 0.1em; }
 
 a:visited {
-  color: #462c63; }
+  color: #5f3b87; }
 
 a:hover {
   background: #784BAA;
   color: #FFFFFF; }
   a:hover:visited {
-    background: #462c63; }
+    background: #5f3b87; }
 
 .nav__item__btn--primary,
 .btn--primary,
@@ -1300,21 +1311,20 @@ a:hover {
 .nav__item__btn--primary,
 .btn--primary {
   color: #F4F8FA;
-  background: #5f3b87; }
+  background: #784BAA; }
   .nav__item__btn--primary:link, .nav__item__btn--primary:focus, .nav__item__btn--primary:visited,
   .btn--primary:link,
   .btn--primary:focus,
   .btn--primary:visited {
     color: #F4F8FA;
-    background: #5f3b87; }
-  .nav__item__btn--primary:hover, .nav__item__btn--primary:active,
-  .btn--primary:hover,
-  .btn--primary:active {
+    background: #784BAA; }
+  .nav__item__btn--primary:hover,
+  .btn--primary:hover {
     color: #F4F8FA;
-    background: #2d1c40; }
+    background: #5f3b87; }
 
 .nav--main {
-  background: #784BAA;
+  background: #F4F8FA;
   border-bottom: 4px solid #ac8ecd;
   height: 70px; }
 
@@ -1325,9 +1335,9 @@ a:hover {
     margin-right: auto; }
   .nav__item__link {
     font-size: 1em;
-    color: #F4F8FA; }
+    color: #784BAA; }
     .nav__item__link:link, .nav__item__link:hover, .nav__item__link:active, .nav__item__link:focus, .nav__item__link:visited {
-      color: #F4F8FA;
+      color: #784BAA;
       background: transparent; }
     .nav__item__link--active, .nav__item__link:hover {
       text-decoration: underline; }

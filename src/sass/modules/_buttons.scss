@@ -38,15 +38,15 @@
   @extend %btn;
 
   color: $ice-gray;
-  background: lighten($brand-dark, 10);
+  background: $brand-primary;
 
   &:link, &:focus, &:visited  {
     color: $ice-gray;
-    background: lighten($brand-dark, 10);
+    background: $brand-primary;
   }
 
-  &:hover, &:active {
+  &:hover {
     color: $ice-gray;
-    background: darken($brand-dark, 10);
+    background: $brand-dark;
   }
 }
