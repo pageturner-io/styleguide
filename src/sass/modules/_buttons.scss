@@ -17,6 +17,7 @@
   &:link {
     padding: 8px 16px;
     color: $brand-primary;
+    text-decoration: none;
   }
 
   border-radius: 4px;
@@ -25,6 +26,7 @@
   &:hover, &:active {
     color: $ice-gray;
     background: $brand-primary;
+    text-decoration: none;
   }
 
   line-height: 1.42857;

@@ -1194,6 +1194,12 @@ html, body {
     display: none !important; } }
 
 
+.container--fixed {
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 1600px; }
+
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -1223,8 +1229,10 @@ strong, .nav__item__btn--primary,
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300; }
 
+body {
+  color: #394149; }
+
 p {
-  color: #394149;
   font-size: 1em; }
 
 small {
@@ -1269,8 +1277,7 @@ a:visited {
   color: #5f3b87; }
 
 a:hover {
-  background: #784BAA;
-  color: #FFFFFF; }
+  text-decoration: underline; }
   a:hover:visited {
     background: #5f3b87; }
 
@@ -1299,14 +1306,16 @@ a:hover {
   .btn--primary:link,
   .btn:link {
     padding: 8px 16px;
-    color: #784BAA; }
+    color: #784BAA;
+    text-decoration: none; }
   .nav__item__btn--primary:hover,
   .btn--primary:hover, .nav__item__btn--primary:active,
   .btn--primary:active,
   .btn:hover,
   .btn:active {
     color: #F4F8FA;
-    background: #784BAA; }
+    background: #784BAA;
+    text-decoration: none; }
 
 .nav__item__btn--primary,
 .btn--primary {
@@ -1349,3 +1358,11 @@ a:hover {
       .nav__item__link--logo:link, .nav__item__link--logo:hover, .nav__item__link--logo:active, .nav__item__link--logo:focus, .nav__item__link--logo:visited {
         border: none;
         text-decoration: none; }
+
+.form__control {
+  margin: 15px 0;
+  padding: 0.3em;
+  border: 1px solid #bfd7e2;
+  border-radius: 3px;
+  width: 100%;
+  color: #394149; }
