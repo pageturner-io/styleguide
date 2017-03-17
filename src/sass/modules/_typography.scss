@@ -24,6 +24,7 @@
 
 body {
   @extend %font-regular;
+  color: $space-gray;
 }
 
 em {
@@ -37,7 +38,6 @@ strong {
 
 p {
   @extend %font-regular;
-  color: $space-gray;
   font-size: 1em;
 }
 
@@ -82,21 +82,20 @@ h6 {
 }
 
 a:link {
-  color: $brand-green;
+  color: $brand-primary;
   text-decoration: none;
   padding: 0.1em;
 }
 
 a:visited {
-  color: $dark-green;
+  color: $brand-dark;
 }
 
 a:hover {
-  background: $brand-green;
-  color: $white;
+  text-decoration: underline;
 
   &:visited {
-    background: $dark-green;
+    background: $brand-dark;
   }
 }
 

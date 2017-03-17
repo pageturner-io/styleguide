@@ -1,0 +1,55 @@
+.nav {
+  @at-root #{&}--main {
+    background: $ice-gray;
+
+    border-bottom: 4px solid lighten($brand-primary, 20);
+
+    height: 70px;
+  }
+
+  @at-root #{&}__item {
+    list-style-type: none;
+    margin: 0 10px;
+
+    &:first-of-type {
+      margin-right: auto;
+    }
+
+    @at-root #{&}__link {
+      @extend %font-bold;
+      font-size: 1em;
+
+      color: $brand-primary;
+
+      &:link, &:hover, &:active, &:focus, &:visited {
+        color: $brand-primary;
+        background: transparent;
+      }
+
+      @at-root #{&}--active, &:hover {
+        text-decoration: underline;
+      }
+
+      @at-root #{&}--logo {
+        @extend %font-light;
+        font-size: 2em;
+        line-height: 1em;
+
+        text-transform: lowercase;
+
+        &:link, &:hover, &:active, &:focus, &:visited {
+          border: none;
+          text-decoration: none;
+        }
+
+        width: 15%;
+      }
+    }
+
+    @at-root #{&}__btn {
+      @at-root #{&}--primary {
+        @extend %btn--primary;
+      }
+    }
+  }
+}
