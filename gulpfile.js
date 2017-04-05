@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    scsslint = require('gulp-scss-lint');
+    sassLint = require('gulp-sass-lint');
 
 var paths = {
   sass: {
@@ -22,7 +22,6 @@ var autoprefixerOptions = {
 gulp.task('sass', function () {
   gulp.src(paths.sass.files)
     .pipe(plumber())
-    .pipe(scsslint())
     .pipe(sass({
       includePaths: ['./node_modules/']
     }).on('error', sass.logError))
@@ -31,9 +30,16 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
+gulp.task('sass:lint', function () {
+  gulp.src(paths.sass.files)
+    .pipe(plumber())
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
+});
+
 gulp.task('sass:build', function () {
   gulp.src(paths.sass.files)
-    .pipe(scsslint())
     .pipe(sass({
       outputStyle: 'compressed',
       includePaths: ['./node_modules/']
@@ -55,5 +61,6 @@ gulp.task('express', function () {
   console.log('Server started in localhost:3000');
 });
 
-gulp.task('default', ['watch', 'sass', 'express']);
-gulp.task('build', ['sass:build']);
+gulp.task('default', ['watch', 'sass:lint', 'sass', 'express']);
+gulp.task('build', ['sass:lint', 'sass:build']);
+gulp.task('lint', ['sass:lint']);

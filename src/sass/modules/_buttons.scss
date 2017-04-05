@@ -1,5 +1,10 @@
 %btn,
 .btn {
+  @extend %font-bold;
+
+  border-radius: 4px;
+  border: 1px solid $brand-primary;
+
   display: inline-block;
 
   text-align: center;
@@ -14,25 +19,22 @@
 
   color: $brand-primary;
 
+  line-height: 1.42857;
+
+  transition: background-color .1s linear;
+
   &:link {
     padding: 8px 16px;
     color: $brand-primary;
     text-decoration: none;
   }
 
-  border-radius: 4px;
-  border: 1px solid $brand-primary;
-
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $ice-gray;
     background: $brand-primary;
     text-decoration: none;
   }
-
-  line-height: 1.42857;
-  @extend %font-bold;
-
-  transition: background-color 0.1s linear;
 }
 
 %btn--primary,
@@ -42,7 +44,9 @@
   color: $ice-gray;
   background: $brand-primary;
 
-  &:link, &:focus, &:visited  {
+  &:link,
+  &:focus,
+  &:visited  {
     color: $ice-gray;
     background: $brand-primary;
   }

@@ -1,7 +1,8 @@
-@import "reset";
-@import "colors";
-@import "fonts";
+@import 'reset';
+@import 'colors';
+@import 'fonts';
 
-html, body {
+html,
+body {
   background: $ice-gray;
 }

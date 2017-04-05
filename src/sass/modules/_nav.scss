@@ -21,7 +21,11 @@
 
       color: $brand-primary;
 
-      &:link, &:hover, &:active, &:focus, &:visited {
+      &:link,
+      &:hover,
+      &:active,
+      &:focus,
+      &:visited {
         color: $brand-primary;
         background: transparent;
       }
@@ -37,12 +41,16 @@
 
         text-transform: lowercase;
 
-        &:link, &:hover, &:active, &:focus, &:visited {
-          border: none;
+        width: 15%;
+
+        &:link,
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited {
+          border: 0;
           text-decoration: none;
         }
-
-        width: 15%;
       }
     }
 
