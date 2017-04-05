@@ -15,7 +15,7 @@
     "theme": {
         "border_color": "#E0E6ED",
         "highlight_color": "#F4F8FA",
-        "brand_color": "#5AFF99",
+        "brand_color": "#784BAA",
         "background_color": "#F9FBFC",
         "code_highlight_theme": "github",
         "override_code_highlight_bg": "#394149",
@@ -57,7 +57,7 @@
                     "type": "colors",
                     "colors": [
                         "#394149,#70767C",
-                        "#2D7F4C,#5AFF99",
+                        "#784BAA,#BF8EE9",
                         "#F4F8FA,#F9FBFC"
                     ]
                 }

@@ -1052,7 +1052,6 @@ html, body {
 
 .grid--justify-end {
   text-align: right;
-  -moz-text-align-last: right;
   text-align-last: right;
   -ms-flex-pack: end;
   -webkit-box-pack: end;
@@ -1062,16 +1061,12 @@ html, body {
     text-align: left;
     text-align: start;
     text-align: initial;
-    -moz-text-align-last: left;
-    -moz-text-align-last: start;
-    -moz-text-align-last: initial;
     text-align-last: left;
     text-align-last: start;
     text-align-last: initial; }
 
 .grid--justify-center {
   text-align: center;
-  -moz-text-align-last: center;
   text-align-last: center;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
@@ -1081,16 +1076,12 @@ html, body {
     text-align: left;
     text-align: start;
     text-align: initial;
-    -moz-text-align-last: left;
-    -moz-text-align-last: start;
-    -moz-text-align-last: initial;
     text-align-last: left;
     text-align-last: start;
     text-align-last: initial; }
 
 .grid--justify-space-between {
   text-align: justify;
-  -moz-text-align-last: justify;
   text-align-last: justify;
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
@@ -1100,16 +1091,12 @@ html, body {
     text-align: left;
     text-align: start;
     text-align: initial;
-    -moz-text-align-last: left;
-    -moz-text-align-last: start;
-    -moz-text-align-last: initial;
     text-align-last: left;
     text-align-last: start;
     text-align-last: initial; }
 
 .grid--justify-space-around {
   text-align: justify;
-  -moz-text-align-last: justify;
   text-align-last: justify;
   -ms-flex-pack: justify;
   justify-content: space-around; }
@@ -1118,9 +1105,6 @@ html, body {
     text-align: left;
     text-align: start;
     text-align: initial;
-    -moz-text-align-last: left;
-    -moz-text-align-last: start;
-    -moz-text-align-last: initial;
     text-align-last: left;
     text-align-last: start;
     text-align-last: initial; }
